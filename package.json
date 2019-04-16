@@ -1,0 +1,40 @@
+{
+  "name": "coly-test",
+  "version": "1.0.0",
+  "author": "Michael Novák",
+  "scripts": {
+    "build": "webpack",
+    "start": "NODE_ENV=production node dist/server*.js"
+  },
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "colyseus": "^0.10.5",
+    "express": "^4.16.4"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.4.3",
+    "@babel/plugin-proposal-class-properties": "^7.4.0",
+    "@babel/plugin-proposal-decorators": "^7.4.0",
+    "@babel/plugin-proposal-optional-chaining": "^7.2.0",
+    "@babel/plugin-transform-runtime": "^7.4.3",
+    "@babel/preset-env": "^7.4.3",
+    "@babel/preset-typescript": "^7.3.3",
+    "@babel/runtime": "^7.4.3",
+    "babel-eslint": "^10.0.1",
+    "babel-loader": "^8.0.5",
+    "clean-webpack-plugin": "^2.0.1",
+    "eslint": "^5.16.0",
+    "eslint-config-airbnb-base": "^13.1.0",
+    "eslint-config-prettier": "^4.1.0",
+    "eslint-loader": "^2.1.2",
+    "eslint-plugin-import": "^2.16.0",
+    "eslint-plugin-prettier": "^3.0.1",
+    "path": "^0.12.7",
+    "prettier": "^1.16.4",
+    "typescript": "^3.4.3",
+    "webpack": "^4.29.6",
+    "webpack-cli": "^3.3.0",
+    "webpack-dev-server": "^3.3.1",
+    "webpack-node-externals": "^1.7.2"
+  }
+}
