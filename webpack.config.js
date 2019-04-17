@@ -4,6 +4,9 @@ const CleanWebpackPlugin = require('clean-webpack-plugin')
 
 const common = {
   mode: 'production',
+  optimization: {
+    minimize: false
+  },
   output: {
     path: path.resolve(__dirname, 'dist'),
     filename: '[name].js',
@@ -17,11 +20,7 @@ const common = {
     __dirname: false, // if you don't put this is, __dirname
     __filename: false, // and __filename return blank or /
   },
-  externals: [
-    nodeExternals({
-      modulesFromFile: true,
-    }),
-  ],
+  externals: [ nodeExternals() ],
   module: {
     rules: [
       {
@@ -42,3 +41,4 @@ const common = {
 }
 
 module.exports = common
+
