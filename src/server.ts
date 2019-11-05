@@ -17,7 +17,7 @@ const gameServer = new Server({
   server,
 })
 
-gameServer.register('testroom', TestRoom)
+gameServer.define('testroom', TestRoom)
 
 app.use(express.static(__dirname))
 
